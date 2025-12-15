@@ -16,8 +16,10 @@ const port = 3000;
 
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true
+      origin: process.env.FRONTEND_URL,
+    allowedHeaders: ["*"],
+    methods: ["*"],
+    credentials: true,
 }));
 
 connectDB();
