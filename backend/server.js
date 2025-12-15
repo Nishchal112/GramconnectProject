@@ -16,7 +16,7 @@ const port = 3000;
 
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }));
 
@@ -32,7 +32,7 @@ app.use(session({
     }),
     cookie: {
         httpOnly: true,
-        secure: false, //Make it true when deploy
+        secure: true, //Make it true when deploy
         maxAge: 1000 * 60 * 60 * 24,
     }
 }));
