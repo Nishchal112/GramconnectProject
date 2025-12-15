@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://gramconnectproject.onrender.com/api";
 
 const initialState = {
     initiativeData: [],
