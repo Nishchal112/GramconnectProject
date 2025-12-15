@@ -3,7 +3,7 @@ import axios from "axios";
 
 axios.defaults.withCredentials = true;
 
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "https://gramconnectproject.onrender.com/api/auth";
 
 export const loginUser = createAsyncThunk(
     "auth/login",
