@@ -9,7 +9,7 @@ export const getAllScheme = createAsyncThunk(
     "schemes/getAll",
     async () => {
         try {
-            const { data } = await axios.get("http://localhost:3000/api/schemes/schemes");
+            const { data } = await axios.get("https://gramconnectproject.onrender.com/api/schemes/schemes");
             return data;
         } catch (error) {
             console.log(error)
